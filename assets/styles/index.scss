@@ -1,0 +1,63 @@
+@import '~bootstrap/scss/bootstrap';
+
+.wrapper {
+  background-color: blue;
+  padding: 10px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr 6fr;
+  background-color: gray;
+}
+
+.form {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border: 1px solid black;
+  max-width: 600px;
+  max-height: 40px;
+}
+
+.weather-info {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-start: 3;
+  border: 1px solid black;
+}
+
+.categorie {
+  color: red;
+}
+
+span {
+  color: black;
+}
+
+.photo {
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  // border: 1px solid black;
+  text-align: center;
+  background-image: url("https://talk.sonymobile.com/t5/image/serverpage/image-id/40213i838F3CFD2BBCE958/image-size/large?v=1.0&px=999");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  max-width: 400px;
+  min-height: 500px;
+}
+
+.info-box {
+max-width: 280px;
+margin-left: 40px;
+display: grid-start;
+}
+
+h2, p {
+position: relative;
+justify-self: center;
+}
